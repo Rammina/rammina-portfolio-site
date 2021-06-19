@@ -1,0 +1,39 @@
+@import "../../utils/scss/variables.scss";
+@import "../../utils/scss/config.scss";
+
+#home-section {
+  width: 100vw;
+  height: calc(100vh - 4.5rem);
+  background-color: #232537;
+}
+
+.home__text {
+  font-size: 1.35rem;
+  color: $textWhite;
+}
+
+.home__button {
+  border: 2px solid #fff;
+  background: #0000;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  padding: 0.6rem 1.25rem;
+  transition: all 0.3s;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.home__button:hover {
+  // background-color: #04c2c9;
+  // border-color: #04c2c9;
+}
+
+@include media-md {
+  .home__text {
+    font-size: 2rem;
+  }
+}
+
+@include media-lg {
+}

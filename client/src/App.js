@@ -8,7 +8,7 @@ import { WindowContext } from "./AppContext";
 import * as constants from "./utils/constants.js";
 
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import Home from "./pages/Home/Home";
+import HomePage from "./pages/HomePage/HomePage";
 import "./normalize.css";
 import "./index.scss";
 
@@ -48,7 +48,7 @@ const App = (props) => {
           {/*<Header />*/}
           <Switch>
             <Route path="/" exact>
-              <Home />
+              <HomePage />
             </Route>
             <Route>
               <ErrorPage
