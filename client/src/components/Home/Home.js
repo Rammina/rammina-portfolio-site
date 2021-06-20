@@ -6,12 +6,13 @@ const Home = ({}) => {
   return (
     <section id="home-section" className="flex-center">
       <div className="flex-center">
-        <p className="home__text">
+        <h1 className="home__text">
           Hi, I'm <span className="highlight">Carlos Miguel Pimentel</span>.
-          <br />
-          I'm a full-stack Web Developer.
+        </h1>
+        <p className="home__p">
+          An avid builder of practical, user-friendly full-stack applications.
         </p>
-
+        {/*consider turning this into a contact call to action*/}
         <button className="home__button">
           View my work {/*add an image tag here*/}
         </button>

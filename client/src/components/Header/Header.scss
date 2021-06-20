@@ -1,0 +1,90 @@
+.ui.secondary.pointing.menu.header {
+  display: flex;
+  align-items: center;
+  z-index: 50;
+  position: fixed;
+  background-color: #222;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1),
+    0px 2px 0px 0px rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1),
+    0px 2px 0px 0px rgba(255, 255, 255, 0.03);
+  height: 3.5rem;
+}
+
+#nav-title {
+  position: relative;
+  font-family: "Overlock", cursive;
+  font-size: 2rem;
+  height: 3.5rem;
+  padding: 0;
+  bottom: 0.475rem;
+  /* text-transform: uppercase; */
+}
+#nav-title:hover {
+  text-shadow: 0 0 1px #aeffff;
+}
+#nav-title:focus {
+  outline: none;
+  /* old box shadow for focus */
+  /* -webkit-box-shadow: 0px 0px 0.5px 1px #ffffff, 0px 0px 1px 2px #969696, */
+  /* 0px 0px 2px 3px #000000; */
+  /* box-shadow: 0px 0px 0.5px 1px #ffffff, 0px 0px 1px 2px #969696, */
+  /* 0px 0px 2px 3px #000000; */
+
+  /* note: make the shadow thicker  and make different versions*/
+  /* new box shadow for focus: */
+  /* -webkit-box-shadow: 0px 0px 0px 0.5px rgba(255,255,255,1), 0px 0px 0px 1.5px rgba(0,0,0,1), 0px 0px 0px 2.5px rgba(255,255,255,1) 0px 0px 0px 3px rgba(0, 0, 0, 1);-moz-box-shadow: 0px 0px 0px 0.5px rgba(255,255,255,1), 0px 0px 0px 1.5px rgba(0,0,0,1), 0px 0px 0px 2.5px rgba(255,255,255,1), 0px 0px 0px 3px rgba(0, 0, 0, 1);box-shadow: 0px 0px 0px 0.5px rgba(255,255,255,1), 0px 0px 0px 1.5px rgba(0,0,0,1), 0px 0px 0px 2.5px rgba(255,255,255,1), 0px 0px 0px 3px rgba(0, 0, 0, 1); */
+  /* new inset box shadow for focus: */
+  /* -webkit-box-shadow: inset 0px 0px 0px 0.5px rgba(255,255,255,1), inset 0px 0px 0px 1.5px rgba(0,0,0,1), inset 0px 0px 0px 2.5px rgba(255,255,255,1) 0px 0px 0px 3px rgba(0, 0, 0, 1);-moz-box-shadow: inset 0px 0px 0px 0.5px rgba(255,255,255,1), inset 0px 0px 0px 1.5px rgba(0,0,0,1), inset 0px 0px 0px 2.5px rgba(255,255,255,1), inset 0px 0px 0px 3px rgba(0, 0, 0, 1);box-shadow: inset 0px 0px 0px 0.5px rgba(255,255,255,1), inset 0px 0px 0px 1.5px rgba(0,0,0,1), inset 0px 0px 0px 2.5px rgba(255,255,255,1), inset 0px 0px 0px 3px rgba(0, 0, 0, 1);
+ */
+  -webkit-box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1),
+    0px 0px 0px 2.5px rgba(255, 255, 255, 1) 0px 0px 0px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1), 0px 0px 0px 2.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 3px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1), 0px 0px 0px 2.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+#nav-hamburger {
+  display: none;
+  position: relative;
+  padding: 0.5rem;
+  border: 1px solid #beffff;
+  border-radius: 3px;
+  bottom: 0.4rem;
+  /* right: 1.5rem; */
+}
+
+#nav-hamburger:hover {
+  background-color: rgba(221, 238, 255, 0.15);
+}
+
+#nav-hamburger:focus {
+  /* old box shadow for focus */
+  /* -webkit-box-shadow: 0px 0px 0.5px 1px #ffffff, 0px 0px 1px 2px #969696, */
+  /* 0px 0px 2px 3px #000000; */
+  /* box-shadow: 0px 0px 0.5px 1px #ffffff, 0px 0px 1px 2px #969696, */
+  /* 0px 0px 2px 3px #000000; */
+
+  -webkit-box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1),
+    0px 0px 0px 2.5px rgba(255, 255, 255, 1) 0px 0px 0px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1), 0px 0px 0px 2.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 3px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1), 0px 0px 0px 2.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+#nav-hamburger.show {
+  display: block;
+}

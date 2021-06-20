@@ -1,0 +1,208 @@
+.nav-menu.ui.sidebar.vertical {
+  z-index: 30;
+  overflow-x: hidden;
+  width: 10rem !important;
+  opacity: 1;
+  visibility: hidden;
+  transform: translateX(11rem);
+  transition: opacity 0.19s ease-in, visibility 0.19s ease-in,
+    transform 0.19s ease-in;
+  border-left: 1px solid #beffff;
+  background-color: #222528;
+  -webkit-box-shadow: -1px 0px 1px 0px rgba(206, 255, 255, 0.8),
+    -2px 0px 3px 0px rgba(206, 255, 255, 0.6),
+    -3px 0px 3px 0px rgba(206, 255, 255, 0.5),
+    -4px 0px 4px 0px rgba(206, 255, 255, 0.3);
+  box-shadow: -1px 0px 1px 0px rgba(206, 255, 255, 0.8),
+    -2px 0px 3px 0px rgba(206, 255, 255, 0.6),
+    -3px 0px 3px 0px rgba(206, 255, 255, 0.5),
+    -4px 0px 4px 0px rgba(206, 255, 255, 0.3);
+}
+
+.nav-menu.ui.sidebar.vertical .item {
+  position: relative;
+  width: 100%;
+  margin: 0.5rem 0;
+  bottom: 0.9rem;
+}
+
+.nav-menu.ui.sidebar.vertical:hover .item:hover {
+  background-color: #fff2;
+}
+
+.nav-menu.ui.sidebar.vertical.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0rem);
+}
+
+.nav-menu.ui.sidebar.vertical.invisible {
+  opacity: 1;
+  visibility: hidden;
+  transform: translateX(11rem);
+}
+
+.ui.inverted.menu .item,
+.ui.inverted.menu .item > a:not(.ui) {
+  color: #beffff;
+}
+
+#nav-menu-backdrop {
+  z-index: 20;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.19s ease-in, visibility 0.19s ease-in;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav-menu-backdrop.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+#nav-menu-backdrop.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-item {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  height: 3.5rem;
+}
+
+.nav-item:hover {
+  /* text-shadow: 0 0 1px #aeffff; */
+}
+
+.nav-item:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1),
+    0px 0px 0px 2.5px rgba(255, 255, 255, 1) 0px 0px 0px 3px rgba(0, 0, 0, 1) !important;
+  -moz-box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1), 0px 0px 0px 2.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 3px rgba(0, 0, 0, 1) !important;
+  box-shadow: 0px 0px 0px 0.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 1.5px rgba(0, 0, 0, 1), 0px 0px 0px 2.5px rgba(255, 255, 255, 1),
+    0px 0px 0px 3px rgba(0, 0, 0, 1) !important;
+
+  /* old-style */
+  /* -webkit-box-shadow: 0px 0px 0.5px 1px #ffffff, 0px 0px 1px 2px #969696, */
+  /* 0px 0px 2px 3px #000000 !important; */
+  /* box-shadow: 0px 0px 0.5px 1px #ffffff, 0px 0px 1px 2px #969696, */
+  /* 0px 0px 2px 3px #000000 !important; */
+}
+
+.nav-close {
+  /*note: add breakpoints for this */
+  /*z-index: 102;*/
+  display: inline-block;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  left: 6.7rem;
+  bottom: 0.4rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.2rem;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin-top: -1rem;
+  cursor: pointer;
+}
+
+.nav-close:hover {
+  color: rgb(184, 190, 197);
+}
+
+button.nav-menu.ui.primary.google.button {
+  /* position: relative; */
+  /* margin-top: 0.6rem; */
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  border-radius: 0px;
+  margin-left: 0.04rem;
+  /* width: calc(100% - 0.5rem); */
+}
+
+#nav-menu-logout-button {
+  color: #f88;
+  position: absolute;
+  bottom: 3rem;
+}
+#nav-menu-logout-button:hover {
+  color: #fbb !important;
+  /* background-color: #f002; */
+  text-shadow: 0 0 0 #0000 !important;
+}
+
+@media screen and (min-width: 450px) {
+  .nav-menu.ui.sidebar.vertical {
+    width: 35vw !important;
+    max-width: 14.19rem;
+  }
+  .nav-close {
+    left: calc(2rem + 19vw);
+    bottom: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 490px) and (max-width: 615px) {
+  .nav-close {
+    left: calc(1rem + 23vw);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .nav-menu.ui.sidebar.vertical .item {
+    padding-left: 1.85rem;
+  }
+  .nav-close {
+    left: calc(9.9rem + 1.8vw);
+    bottom: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #nav-menu-backdrop.visible {
+    display: none;
+  }
+  .nav-menu.right.menu {
+    height: 100%;
+  }
+  .left.item.nav-item {
+    height: 100%;
+  }
+  .left.item.nav-item.selected {
+    border-bottom: 2px solid #beffff !important;
+  }
+  .left.item.nav-item.selected:hover {
+    border-bottom: 2px solid aliceblue !important;
+  }
+  .nav-close {
+    display: none;
+  }
+  button.nav-menu.ui.primary.google.button {
+    position: relative;
+    margin: 0 0.8rem;
+    margin-top: 0.6rem;
+    bottom: 0;
+    border-radius: 3px;
+    /* width:  */
+  }
+
+  #nav-menu-logout-button {
+    position: relative;
+    bottom: 0;
+  }
+}
